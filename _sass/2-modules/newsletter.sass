@@ -1,0 +1,34 @@
+// newsletter styles
+div#mc_embed_signup
+  display: inline-block
+
+p
+  display: inline
+
+.clear input
+  display: none
+
+input
+  min-width: 170px
+  outline: none
+  border: none
+  border-bottom: 1.5px solid black
+  font-size: .75em
+  background-color: rgba(93, 211, 158, 0.30)
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder
+  color: #636363
+
+input:-moz-placeholder, textarea:-moz-placeholder
+  color: #636363
+
+input::-ms-input-placeholder,textarea::-ms-input-placeholder
+  color: #636363
+
+// the link is {{ baseurl/network.html }}
+// the network.html layout is exacly the same, except the posts listed
+//{% if tag == "twitter" %}
+// list all the posts
+// {% endif %}
+
+// We should put an if statement around the posts specifiying the url

@@ -1,0 +1,31 @@
+<!-- Meta Matter-->
+{% if permalink == "{{baseurl}}/medium"%}
+<title>Fintech Band - Top Medium</title>
+{% elsif site.permalink == "/twitter"%}
+<title>Fintech Band - Top Twitter</title>
+{% elsif site.url == "/facebook"%}
+<title>Fintech Band - Top Facebook</title>
+{% elsif permalink == "/linkedin"%}
+<title>Fintech Band - Top Linkedin</title>
+{% elsif permalink == "/producthunt"%}
+<title>Fintech Band - Top Product Hunt</title>
+{% elsif permalink == "/angellist"%}
+<title>Fintech Band - Top Angel List</title>
+{% elsif permalink == "/youtube"%}
+<title>Fintech Band - Top Youtube</title>
+{% else %}
+<title>Fintech Band</title>
+{% endif %}
+<meta name="description" content="{{site.description}}">
+<meta name="author" content="Tripathi">
+<meta name="keywords" content="{{site.keywords}}">
+<link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.png" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+{{ if layout == "default" }}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" media="screen" title="CSS" charset="utf-8">
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+{{ endif }}
+<!-- Verification Codes -->
+<meta name="google-site-verification" content="3TMNrln3e_YxgDNI896r5_k4mZ9lnvyZ69oxvnMuuBc" />

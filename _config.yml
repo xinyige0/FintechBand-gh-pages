@@ -1,0 +1,19 @@
+# General
+permalink   : /:categories/:title/
+markdown    : kramdown
+highlighter : rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+gems: [bourbon, neat]
+
+# Site settings
+title: Fintech Band
+description: "The best fintech curators, sorted by social network"
+keywords: fintech, curators, social
+email: tripathi@vesthq.com
+url: www.fintechband.com
+repository: https://github.com/vesthq/fintechband
+google_analytics: UA-70609207-1

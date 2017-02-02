@@ -1,0 +1,79 @@
+// profile styles
+.profiles
+  box-sizing: border-box
+  font-weight: 700
+
+li
+  vertical-align: middle
+
+.menu
+  display: flex
+  justify-content: center
+  margin-bottom: 50px
+  p
+    margin-right: 5px
+  img
+    +size(20px)
+
+.media
+  margin: 0 15px 0 0
+  a
+    padding-left: 2px
+    display: block
+    +size(1.5em 1.4em)
+
+.selected
+  border-bottom: 2px solid black
+
+a
+  text-decoration: none
+
+.summary-link
+  text-align: center
+  margin: -30px 0 20px 6%
+  a
+    color: #028090
+    border-bottom: 1px solid #77edb8
+    font-style: italic
+    font-weight: 500
+
+.parent
+  margin-left: 8%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  span
+    display: inline-block
+    text-align: center
+    width: 125px
+    text-align: left
+
+.item
+  width: 33.3333%
+  margin-bottom: 10px
+
+// change width based on device size (need 2 veiwports here)
+
+.url
+  +size(1em)
+  display: inline-block
+  border-radius: 3px
+  margin-left: 3px
+
+.twitter-link
+  background-color: #00A8E8
+.linkedin-link
+  background-color: #007EA7
+.facebook-link
+  background-color: #003459
+.medium-link
+  background-color: #1A936F
+.producthunt-link
+  background-color: #da552f
+.youtube-link
+  background-color: #bb0000
+.angellist-link
+  border: 2px solid #000000
+
+//1023px media query to 50%
+// 550px media query to 100%

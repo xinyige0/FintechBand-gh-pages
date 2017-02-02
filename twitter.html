@@ -1,0 +1,52 @@
+---
+layout: network
+permalink: /twitter
+priority: 0.5
+changefreq: monthly
+---
+<section class="sans-serif profiles">
+  <div class="menu">
+    <ul class="parent">
+      <li class="media selected"><a title="twitter" href="/twitter"><img src="/assets/img/twitter-with-circle.svg" alt="" /></a></li>
+      <li class="media"><a title="linkedin" href="/linkedin"><img src="/assets/img/linkedin-with-circle.svg" alt="" /></a></li>
+      <li class="media"><a title="facebook" href="/facebook"><img src="/assets/img/facebook-with-circle.svg" alt="" /></a></li>
+      <li class="media"><a title="medium" href="/medium"><img src="/assets/img/medium-with-circle.svg" alt="" /></a></li>
+      <li class="media"><a title="product hunt" href="/producthunt"><img src="/assets/img/producthunt-with-circle.png" alt="" /></a></li>
+      <li class="media"><a title="youtube" href="/youtube"><img src="/assets/img/youtube-with-circle.svg" alt="" /></a></li>
+      <li class="media"><a title="angel list" href="/angellist"><img style="margin: -1px 0 0 -2px; width: 22px; height: 22px" src="/assets/img/angellist-with-circle.png" alt="" /></a></li>
+    </ul>
+  </div>
+
+  <div class="summary-link">
+    <a href="#">Follow Everyone using our Twitter List</a>
+  </div>
+
+  <ul class="parent">
+    {% for people in site.tags.twitter %}
+      <li class="item">
+        <span>{{people.name}}</span>
+        {% if people.twitter-url %}
+        <a class="twitter-link url" href="{{people.twitter-url}}"></a>
+        {% endif %}
+        {% if people.linkedin-url %}
+        <a class="linkedin-link url" href="{{people.linkedin-url}}"></a>
+        {% endif %}
+        {% if people.facebook-url %}
+        <a class="facebook-link url" href="{{people.facebook-url}}"></a>
+        {% endif %}
+        {% if people.medium-url %}
+        <a class="medium-link url" href="{{people.medium-url}}"></a>
+        {% endif %}
+        {% if people.producthunt-url %}
+        <a class="producthunt-link url" href="{{people.producthunt-url}}"></a>
+        {% endif %}
+        {% if people.youtube-url %}
+        <a class="youtube-link url" href="{{people.youtube-url}}"></a>
+        {% endif %}
+        {% if people.angellist-url %}
+        <a class="angellist-link url" href="{{people.angellist-url}}"></a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
